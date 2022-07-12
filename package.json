@@ -1,0 +1,24 @@
+{
+  "name": "smart-cinema",
+  "version": "1.0.0",
+  "description": "Cinema Web Page with Blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seang-G/Smart-Cinema.git"
+  },
+  "author": "truthgarnet, Seang-G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seang-G/Smart-Cinema/issues"
+  },
+  "homepage": "https://github.com/Seang-G/Smart-Cinema#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.0",
+    "hardhat-abi-exporter": "^2.10.0"
+  }
+}
