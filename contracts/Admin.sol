@@ -42,7 +42,7 @@ contract Admin is ERC721URIStorage, Ownable {
 
    function tokenURI(uint256 tokenId) public view override returns (string memory) {
        require(_exists(tokenId), "URI query for nonexistent token!");
-       string memory uri = "https://gateway.pinata.cloud/ipfs/QmVgH1bjmyQbxC3RXKGY62ifpte1gV1m9PkqseL9p7PGPg/";
+       string memory uri = "https://gateway.pinata.cloud/ipfs/QmbZarA43kfxmvQuxtMtwHYV9KxP9aVuYpzd6S8PZa9QMo/";
           return bytes(uri).length >= 0 ? string(abi.encodePacked(uri, tokenId.toString(), fileExtention)) : "";
    }
 
