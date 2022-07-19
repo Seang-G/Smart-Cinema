@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SmartCinema.sol": "SmartCinema"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SmartCinema.sol": {
+			"keccak256": "0xdc288b2280d5b0677d228d23637da6740fcd9df71946efe06284fd6643b17bb4",
+			"license": "Unlicense",
+			"urls": [
+				"bzz-raw://fcf8a3dc995e06e3a9dcd10d73a9ada9e06254200a24af205467cb9b4ee9602e",
+				"dweb:/ipfs/QmWrQ5kNJVFAz31xA6UzBsfT76PB3Lns5CF1amoGPU8b2V"
+			]
+		}
+	},
+	"version": 1
+}

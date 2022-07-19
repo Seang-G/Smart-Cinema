@@ -1,0 +1,474 @@
+{
+	"id": "6a1d5a038432ebce2504fad04ada18b3",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.10",
+	"solcLongVersion": "0.8.10+commit.fc410830",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"SmartCinema.sol": {
+				"content": "//SPDX-License-Identifier: Unlicense\r\npragma solidity ^0.8.0;\r\n\r\ncontract SmartCinema {\r\n\r\n    struct Ticket{\r\n        uint id;\r\n        uint theater;\r\n        uint seat;\r\n        uint availableAge;\r\n        uint date;\r\n    }\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"SmartCinema.sol": {
+				"SmartCinema": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"SmartCinema.sol\":65:230  contract SmartCinema {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"SmartCinema.sol\":65:230  contract SmartCinema {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220024ca3265a486db03fce855a98a6d8c74e655b4c83516baeaf40d0987fb62a7064736f6c634300080a0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220024ca3265a486db03fce855a98a6d8c74e655b4c83516baeaf40d0987fb62a7064736f6c634300080a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MUL 0x4C LOG3 0x26 GAS BASEFEE PUSH14 0xB03FCE855A98A6D8C74E655B4C83 MLOAD PUSH12 0xAEAF40D0987FB62A7064736F PUSH13 0x634300080A0033000000000000 ",
+							"sourceMap": "65:165:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220024ca3265a486db03fce855a98a6d8c74e655b4c83516baeaf40d0987fb62a7064736f6c634300080a0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MUL 0x4C LOG3 0x26 GAS BASEFEE PUSH14 0xB03FCE855A98A6D8C74E655B4C83 MLOAD PUSH12 0xAEAF40D0987FB62A7064736F PUSH13 0x634300080A0033000000000000 ",
+							"sourceMap": "65:165:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 65,
+									"end": 230,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220024ca3265a486db03fce855a98a6d8c74e655b4c83516baeaf40d0987fb62a7064736f6c634300080a0033",
+									".code": [
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 65,
+											"end": 230,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"SmartCinema.sol\":\"SmartCinema\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"SmartCinema.sol\":{\"keccak256\":\"0xdc288b2280d5b0677d228d23637da6740fcd9df71946efe06284fd6643b17bb4\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://fcf8a3dc995e06e3a9dcd10d73a9ada9e06254200a24af205467cb9b4ee9602e\",\"dweb:/ipfs/QmWrQ5kNJVFAz31xA6UzBsfT76PB3Lns5CF1amoGPU8b2V\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"SmartCinema.sol": {
+				"ast": {
+					"absolutePath": "SmartCinema.sol",
+					"exportedSymbols": {
+						"SmartCinema": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "Unlicense",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "38:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "SmartCinema",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 13,
+							"linearizedBaseContracts": [
+								13
+							],
+							"name": "SmartCinema",
+							"nameLocation": "74:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "SmartCinema.Ticket",
+									"id": 12,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"mutability": "mutable",
+											"name": "id",
+											"nameLocation": "124:2:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "119:7:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "119:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"mutability": "mutable",
+											"name": "theater",
+											"nameLocation": "142:7:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "137:12:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "137:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"mutability": "mutable",
+											"name": "seat",
+											"nameLocation": "165:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "160:9:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "160:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 9,
+											"mutability": "mutable",
+											"name": "availableAge",
+											"nameLocation": "185:12:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "180:17:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 8,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "180:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 11,
+											"mutability": "mutable",
+											"name": "date",
+											"nameLocation": "213:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 12,
+											"src": "208:9:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 10,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "208:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Ticket",
+									"nameLocation": "102:6:0",
+									"nodeType": "StructDefinition",
+									"scope": 13,
+									"src": "95:130:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 14,
+							"src": "65:165:0",
+							"usedErrors": []
+						}
+					],
+					"src": "38:192:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
